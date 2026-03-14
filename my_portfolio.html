@@ -3,83 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinkisa Demeke Worku | Cloud Engineer</title>
+    <title>Dinkisa Demeke Worku | Cloud & Infrastructure Engineer</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background: #f4f7f6; }
-        header { background: #0078d4; color: white; padding: 2rem; text-align: center; border-radius: 8px; }
-        .section { background: white; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #0078d4; border-bottom: 2px solid #0078d4; padding-bottom: 5px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .badge { background: #e1f0ff; color: #0078d4; padding: 5px 10px; border-radius: 15px; font-size: 0.9em; font-weight: bold; margin: 5px; display: inline-block; }
-        .project-link { color: #0078d4; text-decoration: none; font-weight: bold; }
+        :root {
+            --azure-blue: #0078d4;
+            --dark-bg: #212121;
+            --light-gray: #f4f4f4;
+            --text-main: #333;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-main); margin: 0; padding: 0; background-color: var(--light-gray); }
+        header { background: var(--azure-blue); color: white; padding: 3rem 1rem; text-align: center; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .section { background: white; padding: 30px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--azure-blue); border-bottom: 2px solid var(--azure-blue); padding-bottom: 10px; margin-top: 0; }
+        h3 { margin-bottom: 5px; color: #444; }
+        .contact-info { margin-top: 15px; font-weight: 500; }
+        .contact-info a { color: white; text-decoration: none; margin: 0 10px; border-bottom: 1px solid white; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .skill-category { background: #f9f9f9; padding: 15px; border-left: 4px solid var(--azure-blue); border-radius: 4px; }
+        .tag { display: inline-block; background: #e1f0ff; color: #005a9e; padding: 4px 10px; border-radius: 20px; font-size: 0.85rem; margin: 3px; font-weight: 600; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .date { font-weight: bold; color: #666; }
+        .cert-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .cert-item { background: #fff; border: 1px solid #ddd; padding: 10px; border-radius: 5px; display: flex; align-items: center; }
+        .cert-item::before { content: "✔️"; margin-right: 10px; color: var(--azure-blue); }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Dinkisa Demeke Worku</h1>
-    <p>Cloud & Infrastructure Engineer | Azure & DevOps Specialist</p>
-    <p>📍 Krakow, Poland | 📧 dinkisaworku@gmail.com</p>
+    <p>Cloud & Infrastructure Engineer | DevOps (Azure | Linux | Kubernetes)</p>
+    <div class="contact-info">
+        📍 Krakow, Poland | 📧 dinkisaworku@gmail.com | 📱 729410725 <br><br>
+        <a href="https://linkedin.com/in/dinkisa-worku-a43b68253/">LinkedIn</a> | 
+        <a href="https://github.com/Dinku143">GitHub</a>
+    </div>
 </header>
 
-<div class="section">
-    <h2>Professional Summary</h2>
-    <p> Passionate and skilled Azure Cloud and Infrastructure Engineer with strong expertise in DevOps practices and cloud networking. Experienced in designing, optimizing, and troubleshooting complex Azure environments, 
-        with proficiency in Docker, Kubernetes, Terraform, Azure DevOps, and automation tools. Adept at implementing scalable and secure cloud infrastructure solutions, 
-        I bring critical thinking and teamwork skills to drive operational excellence and continuous improvement in fast-paced, technology-driven environments.</p>
-</div>
+<div class="container">
 
-<div class="section">
-    <h2>Technical Skills</h2>
-    <div class="grid">
-        <div>
-            <strong>Cloud & Infrastructure</strong><br>
-            <span class="badge">Azure (VNets, VWAN, NSGs)</span>
-            <span class="badge">Kubernetes (AKS)</span>
-            <span class="badge">Docker</span>
-            <span class="badge">Terraform / Bicep</span>
+    <section class="section">
+        <h2>Professional Summary</h2>
+        <p>Passionate and skilled Azure Cloud and Infrastructure Engineer with strong expertise in DevOps practices and cloud networking. Experienced in designing, optimizing, and troubleshooting complex Azure environments with proficiency in Docker, Kubernetes, Terraform, and Azure DevOps. Adept at implementing scalable and secure cloud infrastructure solutions.</p>
+    </section>
+
+    <section class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Cloud Networking & Security</h3>
+                <span class="tag">VNet & VWAN</span> <span class="tag">VPN Gateway</span> <span class="tag">ExpressRoute</span> 
+                <span class="tag">Azure Firewall</span> <span class="tag">WAF & NSG</span> <span class="tag">App Gateway</span>
+                <span class="tag">Traffic Manager</span> <span class="tag">Front Door</span> <span class="tag">Private Endpoints</span>
+            </div>
+            <div class="skill-category">
+                <h3>Containerization & DevOps</h3>
+                <span class="tag">AKS (Kubernetes)</span> <span class="tag">Docker</span> <span class="tag">Helm</span> 
+                <span class="tag">Argo CD</span> <span class="tag">Flux</span> <span class="tag">Azure DevOps</span> 
+                <span class="tag">Jenkins</span> <span class="tag">GitHub Actions</span>
+            </div>
+            <div class="skill-category">
+                <h3>Infrastructure as Code</h3>
+                <span class="tag">Terraform</span> <span class="tag">Bicep</span> <span class="tag">ARM Templates</span> 
+                <span class="tag">Ansible</span> <span class="tag">Linux Admin</span>
+            </div>
+            <div class="skill-category">
+                <h3>Scripting & Automation</h3>
+                <span class="tag">Python</span> <span class="tag">Bash</span> <span class="tag">PowerShell</span> 
+                <span class="tag">Kusto (KQL)</span> <span class="tag">Azure Monitor</span>
+            </div>
         </div>
-        <div>
-            <strong>Automation & Scripting</strong><br>
-            <span class="badge">Python</span>
-            <span class="badge">PowerShell</span>
-            <span class="badge">Bash</span>
-            <span class="badge">Azure DevOps</span>
+    </section>
+
+    <section class="section">
+        <h2>Professional Experience</h2>
+        
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Cloud and Infrastructure Engineer | LTIMindtree</h3>
+                <span class="date">03/2024 - Present</span>
+            </div>
+            <p><em>Krakow, Poland</em></p>
+            <ul>
+                <li>Specializing in design, implementation, and optimization of core Azure services (VNets, VWAN, NSGs, UDRs).</li>
+                <li>Managing hybrid connectivity using VPN Gateways and ExpressRoute for secure communication.</li>
+                <li>Deploying load balancing solutions: Application Gateway, Traffic Manager, and Azure Front Door.</li>
+                <li>Designing cloud-native solutions using Azure Kubernetes Service (AKS) and Azure Container Apps.</li>
+                <li>Implementing GitOps workflows and automating deployments using Helm, Argo CD, and Flux.</li>
+                <li>Building CI/CD pipelines in Azure DevOps to streamline infrastructure automation.</li>
+            </ul>
         </div>
-    </div>
-</div>
 
-<div class="section">
-    <h2>Experience</h2>
-    <h3>LTIMindtree | Cloud & Infrastructure Engineer</h3>
-    <p><em>03/2024 - Present | Krakow, Poland</em></p>
-    <ul>
-        <li>Designed and optimized cloud environments using core Azure services (VNets, ExpressRoute, WAF)[cite: 77].</li>
-        <li>Built CI/CD pipelines using Azure DevOps and GitHub Actions[cite: 11, 77].</li>
-        <li>Automated workflows with PowerShell and Python to improve reliability[cite: 12, 14].</li>
-    </ul>
-</div>
+        <hr>
 
-<div class="section">
-    <h2>Education & Certs</h2>
-    <p><strong>Master's in Computer Science</strong> - Warsaw University of Technology </p>
-    <div class="grid">
-        <div>
-            <span class="badge">AZ-305: Solutions Architect Expert</span><br>
-            
-            <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.svg" width="100" alt="AZ-305 Badge"><br>
-            <span class="badge">AZ-104: Azure Administrator</span><br>
-            <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" width="100" alt="AZ-104 Badge"><br>
-            <span class="badge">AZ-900: Azure Fundamentals</span>
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>IT Technical Engineer | Self-Employed</h3>
+                <span class="date">01/2021 - 08/2022</span>
+            </div>
+            <p><em>Ambo, Ethiopia</em></p>
+            <ul>
+                <li>Designed Linux and Windows server environments with a focus on uptime and operational resilience.</li>
+                <li>Implemented monitoring and recovery automation to improve service continuity.</li>
+                <li>Built secure network architectures including VPN connectivity and firewall configuration.</li>
+            </ul>
         </div>
-    </div>
-</div>
+    </section>
 
-<div class="section">
-    <h2>Featured Project</h2>
-    <h3>Master's Thesis: NoSQL Stream Processing</h3>
-    <p>Developed a real-time fraud detection pipeline using Apache Kafka, Flink, and MongoDB[cite: 57, 58].</p>
-    <a href="https://github.com/Dinku143/Dinkisa_Worku" class="project-link">View Project on GitHub →</a>
+    <section class="section">
+        <h2>Education</h2>
+        <div class="exp-header">
+            <h3>Master's in Computer Science (Systems and Networks)</h3>
+            <span class="date">10/2022 - 09/2024</span>
+        </div>
+        <p>Warsaw University of Technology | Warsaw, Poland</p>
+
+        <div class="exp-header">
+            <h3>Bachelor in Computer Science</h3>
+            <span class="date">01/2016 - 01/2021</span>
+        </div>
+        <p>Ambo University | Ambo, Ethiopia</p>
+    </section>
+
+    <section class="section">
+        <h2>Certifications</h2>
+        <ul class="cert-list">
+            <li class="cert-item">Azure Solutions Architect Expert (AZ-305)</li>
+            <li class="cert-item">Azure Administrator Associate (AZ-104)</li>
+            <li class="cert-item">Azure Fundamentals (AZ-900)</li>
+            <li class="cert-item">Azure Linux Foundation Certificate</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Languages</h2>
+        <p><strong>English:</strong> Advanced (C1) | <strong>Oromo:</strong> Native | <strong>Amharic:</strong> Advanced</p>
+    </section>
+
 </div>
 
 </body>
