@@ -1,184 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dinkisa Demeke Worku | Cloud Engineer</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-:root{
---primary:#0078d4;
---dark:#1f2933;
---light:#f5f7fa;
---text:#333;
-}
-
-*{
-box-sizing:border-box;
-}
-
-body{
-font-family: "Segoe UI", Arial, sans-serif;
-margin:0;
-background:var(--light);
-color:var(--text);
-line-height:1.6;
-}
-
-/* NAVBAR */
-
-nav{
-background:var(--dark);
-color:white;
-display:flex;
-justify-content:space-between;
-padding:15px 40px;
-position:sticky;
-top:0;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:500;
-}
-
-/* HERO */
-
-header{
-background:linear-gradient(135deg,#0078d4,#004a8f);
-color:white;
-text-align:center;
-padding:80px 20px;
-}
-
-header h1{
-font-size:3rem;
-margin:0;
-}
-
-header p{
-font-size:1.2rem;
-margin-top:10px;
-}
-
-.button{
-display:inline-block;
-margin-top:20px;
-padding:12px 20px;
-background:white;
-color:#0078d4;
-border-radius:5px;
-text-decoration:none;
-font-weight:600;
-}
-
-/* SECTIONS */
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.section{
-background:white;
-padding:35px;
-margin-bottom:30px;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-}
-
-h2{
-color:var(--primary);
-border-bottom:2px solid var(--primary);
-padding-bottom:10px;
-}
-
-/* SKILLS */
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.skill-box{
-background:#f9f9f9;
-padding:15px;
-border-left:4px solid var(--primary);
-}
-
-.tag{
-display:inline-block;
-background:#e6f2ff;
-padding:5px 10px;
-margin:4px;
-border-radius:20px;
-font-size:0.85rem;
-}
-
-/* PROJECTS */
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-
-.project-card{
-background:#fafafa;
-border-radius:6px;
-padding:20px;
-border:1px solid #eee;
-transition:0.3s;
-}
-
-.project-card:hover{
-transform:translateY(-5px);
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
-}
-
-.project-card a{
-text-decoration:none;
-color:var(--primary);
-font-weight:bold;
-}
-
-/* EXPERIENCE */
-
-.job{
-margin-bottom:20px;
-}
-
-.job-title{
-font-weight:bold;
-}
-
-.date{
-color:#777;
-font-size:0.9rem;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-background:var(--dark);
-color:white;
-padding:25px;
-}
-
-</style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
-<div><strong>Dinkisa</strong></div>
-<div>
+<div class="logo">Dinkisa</div>
+
+<div class="nav-links">
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
@@ -187,151 +27,219 @@ padding:25px;
 </div>
 </nav>
 
+<!-- HERO -->
+
 <header>
+
 <h1>Dinkisa Demeke Worku</h1>
-<p>Cloud & Infrastructure Engineer | DevOps | Azure | Kubernetes</p>
-<a class="button" href="https://github.com/Dinku143">View GitHub</a>
+
+<p>Cloud & Infrastructure Engineer | Azure | Kubernetes | DevOps</p>
+
+<div class="hero-buttons">
+
+<a href="https://github.com/Dinku143" target="_blank">GitHub</a>
+
+<a href="https://linkedin.com/in/dinkisa-worku-a43b68253/" target="_blank">LinkedIn</a>
+
+</div>
+
 </header>
 
 <div class="container">
 
-<section id="about" class="section">
+<!-- ABOUT -->
+
+<section id="about">
+
 <h2>Professional Summary</h2>
+
 <p>
-Cloud and Infrastructure Engineer specializing in Microsoft Azure cloud environments,
-DevOps automation, and Kubernetes-based architectures. Experienced in designing
-secure and scalable infrastructure using Infrastructure as Code and modern
-deployment practices.
+Cloud and Infrastructure Engineer with experience in Azure networking,
+DevOps automation, and Kubernetes-based infrastructure.
+Skilled in building scalable cloud systems using Infrastructure as Code
+and modern CI/CD practices.
 </p>
+
 </section>
 
-<section id="skills" class="section">
+<!-- SKILLS -->
+
+<section id="skills">
+
 <h2>Technical Skills</h2>
 
-<div class="skills">
+<div class="skills-grid">
 
-<div class="skill-box">
+<div class="skill-card">
+
 <h3>Cloud</h3>
-<span class="tag">Azure</span>
-<span class="tag">Virtual Networks</span>
-<span class="tag">ExpressRoute</span>
-<span class="tag">Private Endpoints</span>
-<span class="tag">Azure Firewall</span>
+
+<span>Azure</span>
+<span>Virtual Networks</span>
+<span>ExpressRoute</span>
+<span>Private Endpoints</span>
+
 </div>
 
-<div class="skill-box">
-<h3>Containers & DevOps</h3>
-<span class="tag">Docker</span>
-<span class="tag">Kubernetes</span>
-<span class="tag">Helm</span>
-<span class="tag">GitOps</span>
-<span class="tag">ArgoCD</span>
+<div class="skill-card">
+
+<h3>Containers</h3>
+
+<span>Docker</span>
+<span>Kubernetes</span>
+<span>Helm</span>
+<span>AKS</span>
+
 </div>
 
-<div class="skill-box">
+<div class="skill-card">
+
 <h3>Infrastructure as Code</h3>
-<span class="tag">Terraform</span>
-<span class="tag">Bicep</span>
-<span class="tag">ARM Templates</span>
-<span class="tag">Ansible</span>
+
+<span>Terraform</span>
+<span>Bicep</span>
+<span>ARM Templates</span>
+
 </div>
 
-<div class="skill-box">
+<div class="skill-card">
+
 <h3>Automation</h3>
-<span class="tag">Python</span>
-<span class="tag">Bash</span>
-<span class="tag">PowerShell</span>
-<span class="tag">Azure Monitor</span>
+
+<span>Python</span>
+<span>Bash</span>
+<span>PowerShell</span>
+
 </div>
 
 </div>
+
 </section>
 
-<section id="projects" class="section">
+<!-- PROJECTS -->
+
+<section id="projects">
+
 <h2>Projects</h2>
 
-<div class="projects">
+<div class="project-grid">
 
 <div class="project-card">
+
 <h3>Azure Infrastructure Automation</h3>
-<p>Automated Azure infrastructure provisioning using Terraform and CI/CD pipelines.</p>
-<a href="https://github.com/Dinku143">View Project</a>
+
+<p>
+Infrastructure deployment using Terraform and CI/CD pipelines
+for automated cloud provisioning.
+</p>
+
+<a href="https://github.com/Dinku143" target="_blank">View Project</a>
+
 </div>
 
 <div class="project-card">
+
 <h3>Kubernetes Deployment Platform</h3>
-<p>Containerized microservices deployed on AKS with Helm and GitOps workflows.</p>
-<a href="https://github.com/Dinku143">View Project</a>
+
+<p>
+Containerized microservices deployed using Kubernetes and Helm
+with GitOps workflows.
+</p>
+
+<a href="https://github.com/Dinku143" target="_blank">View Project</a>
+
 </div>
 
 <div class="project-card">
+
 <h3>Streaming Data Pipeline</h3>
-<p>Real-time transaction processing system using Kafka, Flink and MongoDB.</p>
-<a href="https://github.com/Dinku143">View Project</a>
+
+<p>
+Real-time data processing pipeline using Kafka, Flink and MongoDB
+for anomaly detection.
+</p>
+
+<a href="https://github.com/Dinku143" target="_blank">View Project</a>
+
 </div>
 
 </div>
+
 </section>
 
-<section id="experience" class="section">
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
 <h2>Professional Experience</h2>
 
 <div class="job">
-<div class="job-title">Cloud & Infrastructure Engineer — LTIMindtree</div>
-<div class="date">2024 – Present | Krakow, Poland</div>
+
+<h3>Cloud & Infrastructure Engineer – LTIMindtree</h3>
+
+<p class="date">2024 – Present | Krakow, Poland</p>
+
 <ul>
-<li>Designed and maintained Azure networking architecture.</li>
-<li>Implemented Kubernetes solutions using Azure Kubernetes Service.</li>
-<li>Automated infrastructure deployment using Terraform and CI/CD pipelines.</li>
+
+<li>Designing and maintaining Azure networking infrastructure.</li>
+
+<li>Deploying Kubernetes workloads on Azure Kubernetes Service.</li>
+
+<li>Automating infrastructure deployments using Terraform.</li>
+
 </ul>
+
 </div>
 
 <div class="job">
-<div class="job-title">IT Technical Engineer — Self Employed</div>
-<div class="date">2021 – 2022 | Ethiopia</div>
+
+<h3>IT Technical Engineer – Self Employed</h3>
+
+<p class="date">2021 – 2022 | Ethiopia</p>
+
 <ul>
-<li>Designed Linux server environments and network infrastructure.</li>
-<li>Implemented monitoring and automation solutions.</li>
+
+<li>Designed Linux server infrastructure.</li>
+
+<li>Implemented secure network architecture and monitoring.</li>
+
 </ul>
+
 </div>
 
 </section>
 
-<section class="section">
-<h2>Education</h2>
+<!-- CONTACT -->
 
-<p><strong>Master's in Computer Science</strong> — Warsaw University of Technology</p>
-<p><strong>Bachelor's in Computer Science</strong> — Ambo University</p>
+<section id="contact">
 
-</section>
-
-<section class="section">
-<h2>Certifications</h2>
-
-<ul>
-<li>Azure Solutions Architect Expert (AZ-305)</li>
-<li>Azure Administrator Associate (AZ-104)</li>
-<li>Azure Fundamentals (AZ-900)</li>
-</ul>
-<a href="Dinkisa_Demeke_Worku_CEDEV.pdf" class="button">Download Resume</a>
-
-</section>
-
-<section id="contact" class="section">
 <h2>Contact</h2>
 
 <p>Email: dinkisaworku@gmail.com</p>
+
 <p>Phone: +48 729 410 725</p>
-<p>LinkedIn: linkedin.com/in/dinkisa-worku-a43b68253</p>
-<p>GitHub: github.com/Dinku143</p>
+
+<p>
+GitHub: <a href="https://github.com/Dinku143">github.com/Dinku143</a>
+</p>
+
+<p>
+LinkedIn:
+<a href="https://linkedin.com/in/dinkisa-worku-a43b68253/">
+linkedin.com/in/dinkisa-worku
+</a>
+</p>
 
 </section>
 
 </div>
 
 <footer>
+
 <p>© 2026 Dinkisa Demeke Worku</p>
+
 </footer>
 
 </body>
+
 </html>
